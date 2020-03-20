@@ -1,0 +1,103 @@
+﻿<Window x:Class="LabSheet6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LabSheet6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl TabStripPlacement="Top">
+            <TabItem Header="Ex1" Width="75">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="8*"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Content="Get Data" Width="100" Height="30" Name="Ex1Button" Click="Ex1Button_Click"/>
+                    <DataGrid Grid.Row="1" Name="Ex1GdDisplay"/>
+                    <TextBlock x:Name="Ex1TblkCount" HorizontalAlignment="Left" Margin="29,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="70"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Ex2" Width="75">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="8*"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Content="Get Data" Width="100" Height="30" Name="Ex2Button" Click="Ex2Button_Click"/>
+                    <DataGrid Grid.Row="1" Name="Ex2GdDisplay"/>
+                    <TextBlock x:Name="Ex2TblkCount" HorizontalAlignment="Left" Margin="10,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="70"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Ex3" Width="75">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="28*"/>
+                        <ColumnDefinition Width="103*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="8*"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Content="Get Data" Width="100" Height="30" Name="Ex3Button" Click="Ex3Button_Click" Grid.Column="1" Margin="175.067,24,343,24"/>
+
+                    <TextBlock x:Name="Ex3TblkCount" HorizontalAlignment="Left" Margin="58,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="217" Grid.Row="1" Grid.ColumnSpan="2"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Ex4" Width="75">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="8*"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Content="Get Data" Width="100" Height="30" Name="Ex4Button" Click="Ex4Button_Click"/>
+                    <DataGrid Grid.Row="1" Name="Ex4GdDisplay"/>
+                    <TextBlock x:Name="Ex4TblkCount" HorizontalAlignment="Left" Margin="10,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="70"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Ex5" Width="75">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="8*"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Content="Get Data" Width="100" Height="30" Name="Ex5Button" Click="Ex5Button_Click"/>
+                    <DataGrid Grid.Row="1" Name="Ex5GdDisplay"/>
+                    <TextBlock x:Name="Ex5TblkCount" HorizontalAlignment="Left" Margin="10,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="70"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Ex6" Width="75">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="8*"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Content="Get Products" Width="100" Height="30" Name="Ex6Button" Click="Ex6Button_Click" Margin="113,27,573,21"/>
+                    <DataGrid Grid.Row="1" Name="Ex6GdDisplay"/>
+                    <TextBlock x:Name="Ex6TblkCount" HorizontalAlignment="Left" Margin="346,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="140" Grid.Row="1"/>
+                    <ListBox x:Name="Ex6LbxEx6Customers" HorizontalAlignment="Left" Height="273" Margin="26,30,0,0" Grid.Row="1" VerticalAlignment="Top" Width="279" SelectionChanged="Ex6LbxEx6Customers_SelectionChanged"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Ex7" Width="75">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="8*"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Content="Get Data" Width="100" Height="30" Name="Ex7Button" Click="Ex7Button_Click"/>
+                    <DataGrid Grid.Row="1" Name="Ex7GdDisplay"/>
+                    <TextBlock x:Name="Ex7TblkCount" HorizontalAlignment="Left" Margin="10,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="70"/>
+                </Grid>
+            </TabItem>
+
+
+        </TabControl>
+    </Grid>
+</Window>
